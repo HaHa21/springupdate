@@ -30,9 +30,12 @@ public class BackendApplication {
 		return registrationBean;
 	}
 
+}
+
+@RestController
+class HelloController {
 	@GetMapping("/")
 	String hello() {
 		return "hello World";
 	}
-
 }
